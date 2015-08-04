@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+
+<html lang="pt-br">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>coloque o título aqui</title>
+
+	    <script type="text/javascript">
+	    var valorTotal = "";
+
+		  	function chamada(valor){
+	    		document.getElementById('mostraNumeros').value += valor;
+	    		valorTotal += valor;	
+	    	}
+
+	    	function chamar(){
+	    		alert("Chamando " + valorTotal);
+	    	}
+
+	    	function cancelar(){
+	    		document.getElementById('mostraNumeros').value = "";
+	    		valorTotal = 0;
+	    	}
+	    </script>
+	</head>
+	
+	<body>
+	   
+		<input type="text" readonly="true" id="mostraNumeros"><br>
+			
+		<input type="button" value="0" onClick="chamada(0)">
+		<input type="button" value="1" onClick="chamada(1)">
+		<input type="button" value="2" onClick="chamada(2)"><br>
+		<input type="button" value="3" onClick="chamada(3)">
+		<input type="button" value="4" onClick="chamada(4)">
+		<input type="button" value="5" onClick="chamada(5)"><br>
+		<input type="button" value="6" onClick="chamada(6)">
+		<input type="button" value="7" onClick="chamada(7)">
+		<input type="button" value="8" onClick="chamada(8)"><br>
+		<input type="button" value="9" onClick="chamada(9)">
+		<br>
+		<br>
+		<input type="button" value="exibir" onClick="chamar()"> 
+		<input type="button" value="cancelar" onClick="cancelar()">
+
+			
+	</body>
+</html>
