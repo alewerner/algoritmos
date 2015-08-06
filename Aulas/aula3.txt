@@ -1,0 +1,46 @@
+	Algoritmos
+	Profº Bruno Boniati
+	Aula 3
+	Variáveis,Constantes e Parâmetros
+	
+	O que são variáveis?
+		.Atributo, mensurável ou não, sujeito à variação
+		."Objeto situado na memória que representa um valor ou expressão"
+		."símbolo do programa que refere-se a um endereço de memória"
+	
+	Variáveis e nomes
+		. Nomes significativos
+		. não podem começar com números, nem conter caracteres especiais($%¨&*()_+@!...)
+		. Não podem conter espaços em branco, palavras acentuadas ou sinais de pontuação
+		. nem as palavras reservadas da linguagem( for, if, while, not, true, false...)
+	Variáveis DEVEM ter
+		.Nome, Tipo e Conteúdo.
+	
+	Tipos podem ser( aqui mais focado no JavaScript)
+		.String
+			- Cadeias de caracteres, qualquer valor entre aspas
+		.Lógico
+			- True or False
+		.Númericos	
+			- Inteiros( valores sem casas decimais)
+			- Reais ( valores com casas decimais)
+	
+	Escopo das variáveis
+		.Variáveis Globais
+			- Evitar variáveis globais, aumentam demais o acoplamento de código.
+		.Variáveis Locais
+
+
+	PONTOS DE BALA
+	-> pode ter mais de um script na mesma página;
+	-> ";" só é obrigatório quando tiver código na mesma linha;
+	-> procurar sempre usar variáveis locais;
+	-> evitar repetição de código;
+	-> usar variáveis com nomes significativos;
+	-> cada função faz uma coisa, evite funções muito longas;
+	-> variáveis locais são as declaradas dentro das funções, e não podem ser acessadas por outras funções;
+	-> podemos ter vários scripts na mesma página, e essas funções conversam entre si;
+	-> se temos duas variáveis com o mesmo nome, uma global e outra local, a local vai ser executada e a global ignorada;
+	-> VAR cria uma variável no escopo da página;
+	-> sem o VAR, qualquer variável declarada se torna GLOBAL.
+	-> usar sempre o VAR, para evitar problemas complexos.

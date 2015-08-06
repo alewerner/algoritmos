@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+
+<html lang="pt-br">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Exercicio 4</title>
+
+	    <script type="text/javascript">
+	    var imagens = ["img/icon.png", "Twitter_bird_icon.png"];
+	    var imagemAtual = 0;
+	    
+		    function trocaImagem(){
+		    	if (imagemAtual == 0) {
+		    		imagemAtual = 1;
+		    
+		    	} else{
+		    	imagemAtual = 0;
+		    	 }
+		    	document.getElementById('imagem').src = imagens[imagemAtual];
+		    }
+		       	
+	    </script>
+	</head>
+	
+	<body>
+	    <br><a href="http://www.twitter.com"> <img src="icon.png" id="imagem" height="200" width="300" /> </a><br>
+		
+		<input type="button" value="Troca IMG" onClick="trocaImagem()"> 
+
+	</body>
+</html>

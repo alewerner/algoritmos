@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title> Example One</title>	
+		<script type="text/javascript">
+			function saudar() {
+				var nome = document.getElementById("nome").value;
+				alert("Bem vindo " + nome)
+				paragrafoNome.innerHTML = "Bem vindo " + nome;
+				
+				}
+			
+		</script>
+	</head>
+
+	<body>
+		Digite seu nome:
+		<input type="text" id="nome">
+		<input type="button" value="clique aqui" onclick="saudar()">
+		<p id="paragrafoNome"></p>
+
+	</body>
+	
+</html>

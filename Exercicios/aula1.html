@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title> Example One</title>	
+
+		<style type="text/css">
+			#texto{
+				color: rgb(255,150,50);
+			}
+		</style>
+
+		<script type="text/javascript">
+			function clicou(){
+				var paragrafo = document.getElementById("texto");
+				var r = document.getElementById("vermelho").value;
+				var v = document.getElementById("verde").value;
+				var a = document.getElementById("azul").value;
+
+				var cor = "rgb(" + r + "," + v + "," + a +")";
+				paragrafo.style.color = cor;
+
+
+			}
+
+
+		</script>
+	</head>
+	<body>
+		<p id="texto">
+			Transformando a cor do texto usando CSS
+		</p>
+
+		<hr>
+		Vermelho:
+		<input type="range" value = "0" id="vermelho" max="255" min=0 onchange="clicou()"><br>
+		<hr>
+		Verde:
+		<input type="range" value = "0" id="verde" max="255" min=0 onchange="clicou()"><br>
+		<hr>
+		Azul:
+		<input type="range" value = "0" id="azul" max="255" min=0 onchange="clicou()" > <br>
+		<br>
+		<input type="button" value="OK" onclick="clicou()">
+
+
+	</body>
+</html>
