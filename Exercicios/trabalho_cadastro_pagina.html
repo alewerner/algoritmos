@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+      <meta charset="utf-8">
+      <title>Cadastro de Email e avaliação do Site</title>
+            
+      <style type="text/css">
+    	
+        body {
+          background-color: #B0E3DC;
+        }
+    			
+    	 div#interface {
+            width: 1000px;
+            background-color: #ffffff;
+            margin: -20px auto 0px auto;
+            box-shadow: 0px 0px 10px black;
+            padding: 10px;
+        
+            text-indent: 50px;
+    		    text-align: justify;
+          }
+      </style> 
+
+      <script type="text/javascript">
+
+          function encerraCadastro(){
+              alert ("CADASTRO EFETUADO SUCESSO!");
+              limparTela()
+          }
+
+        function limparTela(){
+          document.getElementById('nome').value = " "
+          document.getElementById('produto').value= " "
+          document.getElementById('frequencia').value = ' '
+          document.getElementById('nota').value = '0'
+          document.getElementById('check1').checked = false
+          document.getElementById('check2').checked = false
+          document.getElementById('check3').checked = false
+        }
+      </script>      
+    </head>
+
+    
+    <body>
+    <div id="interface">
+
+    <h1><P> Avaliação do site </p></h1>
+
+    <h3>Segue abaixo formulário de avaliação do site do Instituto Federal Farroupilha</h3>
+
+    <div id="pesquisa">
+
+    Qual é o seu nome ?<br><br>
+    <input type="text" id="nome"><br>
+       
+    <h4><p> De 0 a 10, de sua nota para o site num contexto geral</p></h4>
+
+    <input type="range" id="nota">10<br>
+    
+    <br>
+	  
+	   Qual é o seu curso?<br><p><input type="checkbox" id="check1">INTEGRADO<input type="checkbox" id="check2">GRADUAÇÃO<input type="checkbox" id="check3">SUBSEQUENTE</p>
+	  
+    Qual o produto que você mais consome no bar?<br><br><input type="text" id="produto"><br><br>
+      
+    Com qual frequência semanal você constuma consumir produtos no bar?<br><br><input type="number" id="frequencia"><br><br> 
+
+    
+
+    <button onclick="clicou()">Submeter</button>       
+
+    <button onclick="limpar()">Limpar Tudo</button>
+</div>		
+      <br>
+      <br>
+      <br>
+     </div>
+    </body>
+</html>

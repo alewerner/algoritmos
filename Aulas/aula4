@@ -1,0 +1,44 @@
+	Algoritmos
+	Profº Bruno Boniati
+	Aula 4
+	Operadores,Expressões e funções
+	
+	-> Pontos Importantes
+		. Separar o JavaScript do resto da página usando arquivos especificos de código JS 
+		  usando a tag <script src="codigo.js"/>
+
+	Operadores 
+		. Símbolo que permitem a realização de operações sobre variáveis que podem modificar seu valor. - + * / == && 
+		. Categorias 
+			- Aritiméticos - + - * / %( resto da divisão)
+					* atribuição por += -= *= /= %=
+					* incremento a++ 
+					* decremento b--
+					* Incremento/decremento Pré ++b e pós Fixado b++
+			- Relacionais  - 
+					* == igual
+					* != diferença
+					* < menor
+					* > maior 
+					* >= menor igual
+					* <= maior igual
+					* === compara variaveis do mesmo tipo
+					* !== compara se os tipos são diferentes
+			- Lógicos      -
+					* !A 	    ( negação )
+					* A && B E  ( conjunção)
+					* A || B OU ( disjunção)
+			- Concatenação - 	
+					* 
+					* ? : ternario
+
+
+	Expressões
+
+	Funções
+		 
+	Tabela de Prioridades
+
+
+	Desafio da semana	
+		. Funções utilitárias demonstrar como funcionam três funções do JavaScript
