@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+
+<html lang="pt-br">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Ordenação</title>
+	</head>
+	
+	<script>
+	
+	   function ordenarCrescente() {
+		   var n1 = document.getElementById("numero1_original").value
+		   var n2 = document.getElementById("numero2_original").value
+		   var n3 = document.getElementById("numero3_original").value
+		   
+		     
+		   
+		   document.getElementById("numero1_ordenado").value = n1
+		   document.getElementById("numero2_ordenado").value = n2
+		   document.getElementById("numero3_ordenado").value = n3
+	   }
+	   
+	   function ordenarDecrescente() {
+		   
+		   
+		   
+		   
+	   }
+	
+	</script>
+	
+	
+	<body>
+	   <h2>Ordenação</h2>
+	   
+	   <p>Codifique um programa para ordenar de forma crescente e posteriormente decrescente três números fornecidos pelo usuário.</p>
+	   
+	   <p>Teste seu código aqui ...</p>
+	   
+	   A <input type="text" id="numero1_original" value=4> <br>
+	   B <input type="text" id="numero2_original" value=6> <br>
+	   C <input type="text" id="numero3_original" value=3> <br>
+	   
+	   <br>
+	   <input type="button" value="Ordem Crescente (A..Z)" onClick="ordenarCrescente()">
+	   <input type="button" value="Ordem Decrescente (Z..A)" onClick="ordenarDecrescente()">
+	   <br><br>
+	   
+   	   1º) <input type="text" id="numero1_ordenado"> <br>
+	   2º) <input type="text" id="numero2_ordenado"> <br>
+	   3º) <input type="text" id="numero3_ordenado"> <br>
+
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+
+<html lang="pt-br">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Validar Data</title>
+	</head>
+	
+	<script>
+	
+	   function validarData(dia, mes, ano) {
+		   
+		   alert(dia + "/" + mes + "/" + ano)
+	   
+	   }
+	   
+	</script>
+	
+	
+	<body>
+	   <h2>Validar Data</h2>
+	   
+	   <p>Agora que você já sabe se um ano é bissexto ou não, que tal fazer um programa para validar uma data! O usuário digita três números: dia, mês e ano e você valida se a data é válida ou inválida utilizando os seguintes critérios:</p>
+	   
+	   <ul>
+			<li>O valor do <b>dia</b> não pode ser negativo e seu valor máximo depende do mês: alguns meses tem 30 dias, outros tem 31 dias e o mês de fevereiro tem 29 dias somente se o ano for bissexto.</li>
+			<li>O valor do <b>mês</b> deve estar entre 1 e 12.</li>
+			<li>O ano não pode ser negativo.</li>
+	   </ul>
+	   
+	   <p>Teste seu código aqui ...</p>
+
+		Digite o dia, mês e ano e clique em verificar: 
+		<input type="number" id="dia" placeholder="25">/
+		<input type="number" id="mes" placeholder="08">/
+		<input type="number" id="ano" placeholder="2015">
+	   
+	    <input type="button" value="Verificar" onClick="validarData(document.getElementById('dia').value,document.getElementById('mes').value,document.getElementById('ano').value)">
+
+	</body>
+</html>

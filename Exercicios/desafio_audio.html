@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Qual é a música</title>
+    <script type="text/javascript">
+      function play() {
+        alert("tocando um som")
+        var m = document.getElementById("player");
+        m.play();
+      }
+
+      function pause() {
+        alert("Parando a execução")
+        var m = document.getElementById("player");
+        m.pause();
+      }
+    </script>
+  </head>
+  <body>
+
+      <audio id="player" src="solicitude.mp3"> </audio>
+        <input type="button" name="play" value="play" onclick="play()">
+        <input type="button" name="pause" value="pause" onclick="pause()">
+
+      </audio>
+  </body>
+</html>

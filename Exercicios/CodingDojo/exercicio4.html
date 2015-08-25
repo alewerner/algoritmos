@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+
+<html lang="pt-br">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Força Gravitacional Relativa</title>
+	</head>
+	
+	<script>
+	
+	   function calcularPeso(codPlaneta, peso) {
+		   alert("Você pesa " + peso + " e escolheu o planeta " + codPlaneta)
+	   }
+	   
+	</script>
+	
+	
+	<body>
+	   <h2>Força Gravitacional Relativa</h2>
+	   
+	   <p>Escreva um programa de computador onde o usuário informa seu peso (em quilogramas) e indica o código de um planeta do sistema solar (1 - Júpiter, 2 - Marte, 3 - Mercúrio, 4 - Netuno, 5 - Saturno, 6 - Urano, 7 - Vênus). A partir das informações digitadas o programa irá calcular o peso do usuário no planeta escolhido, considerando a <a href="https://pt.wikipedia.org/wiki/Gravidade#Compara.C3.A7.C3.A3o_da_for.C3.A7a_da_gravidade_no_Sistema_Solar">força gravitacional relativa</a>.</p>
+	   
+	   <p>Teste seu código aqui ...</p>
+	   
+	   <fieldset>
+		   <legend>Informe seus dados</legend>
+		   
+		   <label for="pesoTerra">Quanto você pesa na terra:</label>   
+		   <input type="text" id="pesoTerra" placeholder="Em Kg (ex. 70)">
+		   
+		   <label for="planeta">Escolha um planeta</label>
+	       <select id="planeta">
+			<option value='1'>Júpiter</option>
+			<option value='2'>Marte</option>
+			<option value='3'>Mercúrio</option>
+			<option value='4'>Netuno</option>
+			<option value='5'>Saturno</option>
+			<option value='6'>Urano</option>
+			<option value='7'>Vênus</option>
+	       </select>
+	   
+	   </fieldset>
+	   
+	   <input type="button" value="verificar" onClick="calcularPeso(document.getElementById('planeta').value, document.getElementById('pesoTerra').value)">
+	   
+	   
+
+	</body>
+</html>

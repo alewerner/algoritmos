@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+
+<html lang="pt-br">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Gerar Senha</title>
+	</head>
+	
+	<script>
+	
+	   function gerarSenha(login) {
+		   alert("Seu nome de usuário é " + login)
+	   }
+	   
+	</script>
+	
+	
+	<body>
+	   <h2>Gerar Senha</h2>
+	   
+	   <p>Codifique um programa para sugerir uma senha padrão a um usuário. A senha deve ter 5 caracteres e deve ser baseada em um nome de usuário (login) a ser fornecido pelo usuário que não pode ser vazio e não pode ter um comprimento maior do que 9 caracteres. A senha deve obedecer às seguintes restrições:</p>
+	   
+	   <ul>
+			<li>Deve começar com a letra seguinte da primeira letra do nome do usuário. Ex.: para um usuário de nome Bruno a senha deve começar com a letra “c” (pois a letra “c” vem depois da letra “b”). No caso de um usuário cujo nome começa com Z (ex. Zacarias) então a primeira letra deve ser a letra “a” (o programa deve “dar a volta” no alfabeto)</li>
+			<li>O segundo dígito da senha deve ser o número de letras do nome de usuário.</li>
+			<li>O terceiro e quarto dígitos devem ser o código ASCII da última letra do login informado pelo usuário. O código da letra “a” (minúsculo) é 97, da letra “b” é 98 e assim por diante. Se o número for maior do que cem (neste caso tendo 3 casas) então o primeiro dígito deve ser descartado.</li>
+			<li>O último (quinto dígito) é a soma dos dígitos 2, 3 e 4.</li>
+	   </ul>
+	   
+	   <p>Teste seu código aqui ...</p>
+	   
+	   Login: <input type="text" id="login" placeholder="ex. bruno">
+	   
+	   <input type="button" value="gerar" onClick="gerarSenha(document.getElementById('login').value)">
+	   
+	   
+
+	</body>
+</html>

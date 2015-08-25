@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title> Funções em JavaScript</title>
+</head>
+
+<body>
+
+<p>  A função <strong> getDay() </strong> retorna o dia da semana como um número :  </p>
+<p id="diaExtenso"></p>
+<p id="funcaoData"></p>
+
+<p> Função  <strong>toPrecision()</strong> retorna uma string, com um numero com uma precisão pré formatada :
+    Exemplo: 9.656 </p>
+<p id='precisao'></p>
+
+<p>
+  Encontrando palavras dentro de uma string
+  A função <strong> indexOf() </strong> retorna um inteiro com a posição da primeira ocorrência do texto que você quer encontrar:</p>
+
+<p id="texto">Encontrando a posição da palavra String dentro dessa string;</p>
+<button onclick="fProcuraText()">Pesquisar</button>
+<p id="mostraTexto"> </p>
+
+
+  <script>
+  var dataDia = new Date();
+  document.getElementById("diaExtenso").innerHTML = dataDia;
+  document.getElementById("funcaoData").innerHTML = dataDia.getDay();
+  </script>
+
+  <script type="text/javascript">
+  var x = 9.656;
+  document.getElementById("precisao").innerHTML =
+  x.toPrecision() + "  sem precisão <br>" +
+  x.toPrecision(2) + " precisão 2 <br>" +
+  x.toPrecision(4) + " precisão 4<br>" +
+  x.toPrecision(6) + " precisão 6<br>";
+  </script>
+
+  <script type="text/javascript">
+     function fProcuraText() {
+       var texto = document.getElementById("texto").innerHTML;
+       var posicao = texto.indexOf("String");
+       document.getElementById("mostraTexto").innerHTML = posicao;
+     }
+
+  </script>
+
+</body>
+
+
+</html>

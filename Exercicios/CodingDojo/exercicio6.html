@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+
+<html lang="pt-br">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Calcular Consumo</title>
+	</head>
+	
+	<script>
+	
+	   function calcularConsumo() {
+		   
+		   km = document.getElementById("km").value
+		   tipo = document.getElementById("carro").value
+		   ar = document.getElementById("ar").checked
+		   
+	   
+	   }
+	   
+	</script>
+	
+	
+	<body>
+	   <h2>Calcular Consumo</h2>
+	   
+	   <p>Escreva um programa de computador no qual o usuário informa o percurso em quilômetros e o tipo de carro que será utilizado. O programa deve estimar o consumo de combustível considerando a quilometragem e o tipo de carro: </p>
+	   
+	   <ul>
+			<li>Carros do tipo A fazem 14 km com um litro de gasolina</li>
+			<li>Carros do tipo B fazem 11 km por litro.</li>
+			<li>Carros do tipo C fazem 8 km por litro.</li>
+			<li>O último (quinto dígito) é a soma dos dígitos 2, 3 e 4.</li>
+	   </ul>
+	   
+	   <p><b>Obs:</b>Os carros do tipo A e B admitem a utilização de ar-condicionado, neste caso (se o ar-condicionado estiver acionado) o consumo é 20% maior.</p>
+	   
+	   <p>Teste seu código aqui ...</p>
+
+	   <fieldset>
+		   <legend>Dados da viagem</legend>
+		   
+		   <label for="km">Quilometragem a ser percorrida:</label>   
+		   <input type="text" id="km" placeholder="ex. 150"> Km <br>
+		   
+		   <label for="carro">Tipo de verículo</label>
+	       <select id="carro">
+			<option value='A'>Tipo A</option>
+			<option value='B'>Tipo B</option>
+			<option value='C'>Tipo C</option>
+	       </select>
+	       <br>
+	       
+	       <input type="checkbox" id="ar">Utilizar ar-condicionado
+	   </fieldset>
+	   
+	   <input type="button" value="Calcular Consumo" onClick="calcularConsumo()">
+	   
+	   
+
+	</body>
+</html>

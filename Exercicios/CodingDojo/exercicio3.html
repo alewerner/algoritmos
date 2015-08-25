@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+
+<html lang="pt-br">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>Vacinação contra o tétano</title>
+	</head>
+	
+	<script>
+	
+	   function testarVacinacao() {
+		   var ano = document.getElementById("ano").value
+		   var anoAtual = (new Date().getYear()) + 1900
+		   
+		   alert("Estamos em " + anoAtual + " e sua última vacinação foi no ano " + ano)
+	   }
+	   
+	</script>
+	
+	
+	<body>
+	   <h2>Vacinação contra o tétano</h2>
+	   
+	   <p>A vacina contra tétano é aplicada pela última vez entre quatro e seis anos de idade e deve ser reforçada a cada 10 anos. Escreva um programa onde o usuário informa o ano em que tomou o último reforço da vacina contra tétano e o mesmo indica quando é o que o mesmo deverá se vacinar novamente, ou uma mensagem de alerta caso o prazo já tenha vencido e o mesmo encontra-se desprotegido.</p>
+	   
+	   <p>Teste seu código aqui ...</p>
+	   
+	   Quando foi a última vez que você fez a vacina contra o tétano? <input type="text" id="ano" placeholder="Ex. 2012"> <br>
+	   <br>
+	   <input type="button" value="verificar" onClick="testarVacinacao()">
+
+	</body>
+</html>
